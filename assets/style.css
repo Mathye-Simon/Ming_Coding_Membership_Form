@@ -1,0 +1,91 @@
+body {
+    margin: 0px;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: RGB(0, 51, 140);
+    height: 100vh;
+}
+.container {
+    outline: solid white 2px;
+    margin: auto;
+    padding: 10px;
+    height: 85vh;
+    overflow:scroll;
+    background-color: transparent;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.title-container {
+    text-align: center;
+    /* outline: red solid 2px; */
+    justify-content: center;
+    margin-top: 50px;
+}
+.logo-container {
+    text-align: center;
+    /* outline: red solid 2px; */
+    justify-content: center;
+    min-width: 10px;
+}
+input {
+    width:235px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:rgb(255, 255, 255);
+}
+
+.top-inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.low-inputs {
+    display: flex;
+    flex-direction: column;
+}
+ .options {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .decisions {
+    display: flex;
+    justify-content:flex-end;
+ }
+ .decisions button {
+    padding: 10px;
+    margin: 10px;
+ }
+
+ .decisions .cancel {
+    border-radius: 15px;
+    background-color: red;
+    border-color: rgb(247, 4, 4);
+}
+.decisions .cancel:hover {
+    background-color: red;
+    transition:0.2s ease-out;
+ }
+.decisions .submit {
+    border-radius: 15px;
+    border-color: rgb(122, 231, 127);
+    background-color: rgb(122, 231, 127);
+
+}
+
+input:hover {
+    border-color: rgb(0, 204, 255);
+    box-shadow: 0 0 10px #4195fc;
+}
+.decisions button:hover {
+    border-color: rgb(0, 204, 255);
+    box-shadow: 0 0 10px #4195fc;
+}

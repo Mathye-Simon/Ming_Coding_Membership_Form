@@ -2,33 +2,72 @@
 <html>
   <head>
     <title>Ming Coding Membership Form</title>
+    <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
-    <div class="header"><img src="./assets/Ming-Coding-Logo.png" alt="Logo of Ming Coding"> <p>Membership Form</p></div>
-    <form>
+    <div class="container">
 
-      <p>First Name</p>
-      <input type="text" placeholder="First-Name">
-      <p>Last Name</p>
-      <input type="text" placeholder="Last-Name">
-      <p>Email</p>
-      <input type="email" placeholder="Email Address">
-      <input type="date" placeholder="Date of membership">
-      <p>Which of the following will you enrol in? Pick below:</p>
-      <div>
-          <ul>
-            <input type="radio"><li>End User Computing</li>
-            <input type="radio"> <li>Graphics</li>
-            <input type="radio"><li>Robotics</li>
-            <input type="radio"> <li>Programing</li>
-          </ul>
-      </div>
-      <input type="text" placeholder="Street Address">
-      <input type="text" placeholder="City">
-      <input type="text" placeholder="Code">
-      <input type="text" placeholder="Phone Number">
-      <input type="text" placeholder="Name of Next to Kin">
-      <input type="text" placeholder="Next of Kin Phone Number">
-    </form>
+        <div class="header">
+          <div class="logo-container"><img src="./assets/Ming-Coding-Logo.png" alt="Logo of Ming Coding"></div>  <div class="title-container"><p class="title">Membership Form</p></div>
+        </div>
+
+        <form>
+            <div class="top-inputs">
+              <p>First Name</p>
+              <input type="text" placeholder="First-Name">
+              <p>Last Name</p>
+              <input type="text" placeholder="Last-Name">
+              <p>Email</p>
+              <input type="email" placeholder="example@gmail.com">
+              <p>Date of membership</p>
+              <input type="date" placeholder="Date of membership">
+            </div>
+
+            <p>Which of the following will you enrol in? Pick below:</p>
+            <div class="options">
+
+                    <label for="end-user">
+                    <input type="radio" id="end-user" name="course" value="end-user"/>
+                      End-User
+                    </label>
+
+                    <label for="graphics">
+                      <input type="radio" id="graphics" name="course" value="graphics">
+                      Graphics
+                    </label>
+
+                    <label for="robotics">
+                      <input type="radio" id="robotics" name="course" value="robotics">
+                      Robotics
+                    </label>
+
+                    <label for="programming">
+                      <input type="radio" id="programming" name="course" value="Programing">
+                      Programming
+                    </label>
+          
+            </div>
+            <div class="low-inputs">
+              <p>Street Address</p>
+              <input type="text" placeholder="Street Address">
+              <p>Name of city</p>
+              <input type="text" placeholder="City">
+              <p>Code</p>
+              <input type="text" placeholder="Code">
+              <p>Phone number</p>
+              <input type="text" placeholder="Phone Number">
+              <p>Name of next kin</p>
+              <input type="text" placeholder="Name of Next to Kin">
+              <p>Next of kin phone number</p>
+              <input type="text" placeholder="Next of Kin Phone Number">
+
+            </div>  
+            <div class="decisions"> 
+              <button class="cancel" type="button">Cancel</button>
+              <button class="submit" type="button">Submit</button>
+            </div>
+            
+        </form>
+      
   </body>
 </html>
