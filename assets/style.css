@@ -29,7 +29,7 @@ body {
     /* outline: red solid 2px; */
     justify-content: center;
     min-width: 10px;
-    image-rendering:crisp-edges;
+    image-rendering:optimizeQuality;
 }
 input {
     width:235px;
