@@ -8,21 +8,33 @@
     <div class="container">
 
         <div class="header">
-          <div class="logo-container"><img src="./assets/Ming-Coding-Logo.png" alt="Logo of Ming Coding"></div>  <div class="title-container"><p class="title">Membership Form</p></div>
+          <div class="logo-container"><img src="./assets/Ming-Coding-Logo.png" alt="Logo of Ming Coding"></div>  <!--<div class="title-container"><p class="title">Membership Form</p></div> -->
         </div>
         <div class="top-inputs">
               <p>First Name</p>
               <input type="text" placeholder="First-Name">
               <p>Last Name</p>
               <input type="text" placeholder="Last-Name">
+              
+                  <!-- have to polish here -->
+                  <label for="dropdown">Which course would you like to enroll in?:</label>
+                  <select id="dropdown" name="dropdown">
+                    <option value="option1">End-User</option>
+                    <option value="option2">Graphics</option>
+                    <option value="option3">Robotics</option>
+                    <option value="option3">Programing</option>
+                    
+                  </select>
               <p>Email</p>
               <input type="email" placeholder="example@gmail.com">
               <p>Date of membership</p>
               <input type="date" placeholder="Date of membership">
+
+
         </div>
 
-            <p>Which of the following will you enrol in? Pick below:</p>
-        <div class="options">
+        
+        <!-- <div class="options">
 
                     <label for="end-user">
                     <input type="radio" id="end-user" name="course" value="end-user"/>
@@ -44,8 +56,8 @@
                       Programming
                     </label>
           
-        </div>
-        <div class="low-inputs">
+        </div> -->
+        <div class="middle-inputs">
               <p>Street Address</p>
               <input type="text" placeholder="Street Address">
               <p>Name of city</p>
@@ -54,15 +66,13 @@
               <input type="text" placeholder="Code">
               <p>Phone number</p>
               <input type="text" placeholder="Phone Number">
-              <p>Name of next kin</p>
-              <input type="text" placeholder="Name of Next to Kin">
-              <p>Next of kin phone number</p>
-              <input type="text" placeholder="Next of Kin Phone Number">
 
         </div>  
-        <div class="decisions"> 
-              <button class="cancel" type="button">Cancel</button>
-              <button class="submit" type="button">Submit</button>
+        <div class="low-inputs"> 
+          <p>Name of next kin</p>
+          <input type="text" placeholder="Name of Next to Kin">
+          <p>Next of kin phone number</p>
+          <input type="text" placeholder="Next of Kin Phone Number">
         </div>
             
         </form>
